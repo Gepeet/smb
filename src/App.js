@@ -2,39 +2,45 @@ import './App.css';
 import {useState} from 'react';
 import Item from './List/Item';
 import dummyData from './data/dummyData';
+// import navigations from './header/navigations';
+import NavHead from './header/NavHead';
 
 
 const App = () =>{
 
-  const [color, setColor] = useState("#FFFFF");
+  const [color, setColor] = useState("red");
 
   const handleColor = (e) =>{
-    setColor(e);
-    // console.log(color)
+        setColor(e)
+    
   }
-  const handleDefaultColor = (e) =>{
-    setColor(e.target.id)
-  }
-
+  
   const appStyle = {
     backgroundColor:(color),
     transition: 'all 1s ease',
   }
 
   return (
-    <div id="white" onMouseOver={handleDefaultColor} style={appStyle} className="App">
+    <div style={appStyle} className="App">
+
+      <NavHead/>
+
+      <div className="list">
 
       {dummyData.map((item)=>{
         return(
-          <>
-          <Item key={item.id}
+          <div key={item.id} className="item__list">
+          <Item 
             price={item.price}
             id={item.color}
             name = {item.name}
-            handleColor={handleColor}/>
-          </>
+            handleColor={handleColor}
+            img = {item.img}/>
+          </div>
         )
       })}
+
+    </div>
 
       
     </div>
