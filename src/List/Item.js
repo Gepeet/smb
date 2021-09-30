@@ -11,7 +11,7 @@ function Item({handleColor,id,price,name,img}) {
         position:'relative',
         minWidth:'300px',
         
-        height:'max-content',
+        height:'500px',
         display:'flex',
         alignItems:'center',
         flexDirection:'column',
@@ -20,10 +20,11 @@ function Item({handleColor,id,price,name,img}) {
 
     const imgStyle = {
         // position:'absolute',
-        width: '30%',
-        height: '80%',
-        top: '10%',
-        left: ''
+        width: '40%',
+        height: '70%',
+        // top: '10%',
+        // left: '0',
+        objectFit: 'contain'
     }
 
     const priceStyle = {

@@ -24,10 +24,11 @@
 }
 
 .list{
-  max-width: 1200px;
+  max-width: 1300px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  /* object-fit:; */
 }
 

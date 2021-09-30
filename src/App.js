@@ -17,7 +17,7 @@ const App = () =>{
   
   const appStyle = {
     backgroundColor:(color),
-    transition: 'all 1s ease',
+    transition: 'all 2s ease',
   }
 
   return (
