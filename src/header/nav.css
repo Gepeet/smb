@@ -1,5 +1,6 @@
 * {
     padding: 0;
+    margin: 0;
 }
 nav{
     display: flex;
@@ -14,25 +15,29 @@ nav{
 
   nav > h1{
       cursor: pointer;
-      font-size: 40px;
+      font-size: 50px;
   }
   nav >h1:hover{
       opacity: .8;
   }
 
   .linkdiv{
+      padding: 20px 0;
+      height: fit-content;
       width: 100vw;
       /* background-color: aqua; */
       display: flex;
       align-items: center;
       flex-direction: column;
       /* text-align: center; */
-      justify-content: center;
+      /* justify-content: ; */
   }
 
   .linkdiv > h1{
-      text-align: center;
-      /* background-color: aqua; */
+      /* text-align: center; */
+      /* margin: 10px 0; */
+      font-size: 50px;
+      /* background-color: blue; */
   }
 
 
@@ -42,6 +47,7 @@ nav{
     /* background-color: aqua; */
       /* justify-content: space-around; */
       /* width: 100%; */
+    margin: 10px 0;
     list-style:none;
     flex-direction: column;
     display: flex;
@@ -51,8 +57,8 @@ nav{
   
 
   ul> li{
-      align-self: center;
-      margin: 5px 0px;
+      /* align-self: center; */
+      /* margin: 5px 0px; */
       cursor: pointer;
       font-weight: 600;
   }
@@ -75,6 +81,7 @@ nav{
     }
 
     ul > li{
-        margin: 20px 20px ;
+        margin-bottom: 30px;
+        margin-left: 20px;
     }
 }
